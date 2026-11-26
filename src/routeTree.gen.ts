@@ -10,33 +10,115 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as DestinationRouteImport } from './routes/destination'
+import { Route as ProfileRouteImport } from './routes/profile'
+import { Route as ReportRouteImport } from './routes/report'
+import { Route as ReportStatusRouteImport } from './routes/report-status'
+import { Route as RoutesRouteImport } from './routes/routes'
+import { Route as RouteRouteIdRouteImport } from './routes/route.$routeId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DestinationRoute = DestinationRouteImport.update({
+  id: '/destination',
+  path: '/destination',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfileRoute = ProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReportRoute = ReportRouteImport.update({
+  id: '/report',
+  path: '/report',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReportStatusRoute = ReportStatusRouteImport.update({
+  id: '/report-status',
+  path: '/report-status',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoutesRoute = RoutesRouteImport.update({
+  id: '/routes',
+  path: '/routes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RouteRouteIdRoute = RouteRouteIdRouteImport.update({
+  id: '/route/$routeId',
+  path: '/route/$routeId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/destination': typeof DestinationRoute
+  '/profile': typeof ProfileRoute
+  '/report': typeof ReportRoute
+  '/report-status': typeof ReportStatusRoute
+  '/routes': typeof RoutesRoute
+  '/route/$routeId': typeof RouteRouteIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/destination': typeof DestinationRoute
+  '/profile': typeof ProfileRoute
+  '/report': typeof ReportRoute
+  '/report-status': typeof ReportStatusRoute
+  '/routes': typeof RoutesRoute
+  '/route/$routeId': typeof RouteRouteIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/destination': typeof DestinationRoute
+  '/profile': typeof ProfileRoute
+  '/report': typeof ReportRoute
+  '/report-status': typeof ReportStatusRoute
+  '/routes': typeof RoutesRoute
+  '/route/$routeId': typeof RouteRouteIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/destination'
+    | '/profile'
+    | '/report'
+    | '/report-status'
+    | '/routes'
+    | '/route/$routeId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/destination'
+    | '/profile'
+    | '/report'
+    | '/report-status'
+    | '/routes'
+    | '/route/$routeId'
+  id:
+    | '__root__'
+    | '/'
+    | '/destination'
+    | '/profile'
+    | '/report'
+    | '/report-status'
+    | '/routes'
+    | '/route/$routeId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DestinationRoute: typeof DestinationRoute
+  ProfileRoute: typeof ProfileRoute
+  ReportRoute: typeof ReportRoute
+  ReportStatusRoute: typeof ReportStatusRoute
+  RoutesRoute: typeof RoutesRoute
+  RouteRouteIdRoute: typeof RouteRouteIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +130,59 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/destination': {
+      id: '/destination'
+      path: '/destination'
+      fullPath: '/destination'
+      preLoaderRoute: typeof DestinationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profile': {
+      id: '/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/report': {
+      id: '/report'
+      path: '/report'
+      fullPath: '/report'
+      preLoaderRoute: typeof ReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/report-status': {
+      id: '/report-status'
+      path: '/report-status'
+      fullPath: '/report-status'
+      preLoaderRoute: typeof ReportStatusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/routes': {
+      id: '/routes'
+      path: '/routes'
+      fullPath: '/routes'
+      preLoaderRoute: typeof RoutesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/route/$routeId': {
+      id: '/route/$routeId'
+      path: '/route/$routeId'
+      fullPath: '/route/$routeId'
+      preLoaderRoute: typeof RouteRouteIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DestinationRoute: DestinationRoute,
+  ProfileRoute: ProfileRoute,
+  ReportRoute: ReportRoute,
+  ReportStatusRoute: ReportStatusRoute,
+  RoutesRoute: RoutesRoute,
+  RouteRouteIdRoute: RouteRouteIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

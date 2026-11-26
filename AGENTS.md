@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Architecture rules
+
+- Keep all Way2fast state in React state inside `src/lib/way2fastContext.tsx` with no `localStorage`, cookies, or backend calls, because this is a front-end-only university demo.
+- Load `LeafletRoutesMap` and `LeafletPickerMap` only via `React.lazy` inside `<ClientOnly>`, because `leaflet` touches `window` at import time and breaks SSR if imported statically.

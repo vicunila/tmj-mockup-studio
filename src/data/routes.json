@@ -1,0 +1,219 @@
+{
+  "origin": {
+    "name": "Vabaduse väljak",
+    "coords": [59.4342, 24.7445]
+  },
+  "destinations": [
+    { "id": "dest-shop", "name": "Solaris Food Store", "nameEt": "Solarise toidupood", "category": "shop", "address": "Estonia pst 9", "coords": [59.4335, 24.7518] },
+    { "id": "dest-clinic", "name": "Kesklinn Health Clinic", "nameEt": "Kesklinna tervisekeskus", "category": "clinic", "address": "Narva mnt 7", "coords": [59.4384, 24.7525] },
+    { "id": "dest-tram", "name": "Viru Tram Stop", "nameEt": "Viru trammipeatus", "category": "tram", "address": "Pärnu mnt 10", "coords": [59.4371, 24.7539] },
+    { "id": "dest-library", "name": "Tallinn Central Library", "nameEt": "Tallinna Keskraamatukogu", "category": "library", "address": "Estonia pst 8", "coords": [59.4339, 24.7478] }
+  ],
+  "routes": [
+    {
+      "id": "shop-boulevard",
+      "destinationId": "dest-shop",
+      "name": "Estonia pst boulevard",
+      "nameEt": "Estonia pst puiestee",
+      "minutes": 9,
+      "distanceM": 590,
+      "polyline": [[59.4342, 24.7445], [59.4343, 24.7468], [59.4341, 24.7492], [59.4338, 24.7509], [59.4335, 24.7518]],
+      "steps": [
+        { "text": "Cross Vabaduse väljak south edge toward Estonia pst", "textEt": "Ületa Vabaduse väljaku lõunaserv Estonia pst suunas", "distanceM": 150, "slopePct": 3, "surface": "paving", "lastChecked": "2026-11-18", "source": "field survey" },
+        { "text": "Continue along Estonia pst north pavement", "textEt": "Liigu mööda Estonia pst põhjapoolset kõnniteed", "distanceM": 210, "slopePct": 4, "surface": "asphalt", "lastChecked": "2026-11-18", "source": "field survey" },
+        { "text": "Cross Teatri väljak pedestrian signal", "textEt": "Ületa Teatri väljaku fooriga ülekäik", "distanceM": 80, "slopePct": 2, "surface": "asphalt", "lastChecked": "2026-10-29", "source": "community report", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Follow wide ramp to Solaris west entrance", "textEt": "Liigu mööda laia kaldteed Solarise läänesissepääsuni", "distanceM": 150, "slopePct": 3, "surface": "paving", "lastChecked": "2026-11-20", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "shop-park",
+      "destinationId": "dest-shop",
+      "name": "Tammsaare Park path",
+      "nameEt": "Tammsaare pargi tee",
+      "minutes": 8,
+      "distanceM": 520,
+      "polyline": [[59.4342, 24.7445], [59.4352, 24.7466], [59.4356, 24.7495], [59.4346, 24.7514], [59.4335, 24.7518]],
+      "steps": [
+        { "text": "Follow Georg Otsa street pavement", "textEt": "Liigu mööda Georg Otsa tänava kõnniteed", "distanceM": 160, "slopePct": 5, "surface": "asphalt", "lastChecked": "2026-11-12", "source": "field survey" },
+        { "text": "Cut across paved cobblestone edge near Drama Theatre", "textEt": "Lõika läbi munakiviserva Draamateatri juurest", "distanceM": 130, "slopePct": 6, "surface": "cobblestones", "barrier": { "label": "Uneven cobblestone strip (45 m)", "labelEt": "Ebatasane munakivilõik (45 m)", "surface": "cobblestones", "maxSlopeOk": 8 }, "lastChecked": "2026-11-14", "source": "community report" },
+        { "text": "Cross Rävala pst west crossing", "textEt": "Ületa Rävala pst läänepoolne ülekäik", "distanceM": 90, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-10-19", "source": "field survey", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Enter Solaris via south walkway", "textEt": "Sisene Solarisse lõunapoolse jalgtee kaudu", "distanceM": 140, "slopePct": 4, "surface": "paving", "lastChecked": "2026-11-16", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "shop-side-street",
+      "destinationId": "dest-shop",
+      "name": "Sakala short cut",
+      "nameEt": "Sakala lühitee",
+      "minutes": 7,
+      "distanceM": 470,
+      "polyline": [[59.4342, 24.7445], [59.4330, 24.7463], [59.4326, 24.7490], [59.4329, 24.7512], [59.4335, 24.7518]],
+      "steps": [
+        { "text": "Head south along Roosikrantsi corner", "textEt": "Liigu lõunasse Roosikrantsi nurga suunas", "distanceM": 120, "slopePct": 5, "surface": "asphalt", "lastChecked": "2026-11-08", "source": "field survey" },
+        { "text": "Cross Sakala lane without dropped kerb", "textEt": "Ületa Sakala tänav ilma madaldatud äärekivita", "distanceM": 90, "slopePct": 9, "surface": "cobblestones", "barrier": { "label": "High kerb (6 cm) and 9% ramp", "labelEt": "Kõrge äärekivi (6 cm) ja 9% kalle", "maxSlopeOk": 9, "surface": "cobblestones", "noDroppedKerb": true }, "lastChecked": "2026-11-21", "source": "community report" },
+        { "text": "Cross Kentmanni junction", "textEt": "Ületa Kentmanni ristmik", "distanceM": 110, "slopePct": 4, "surface": "asphalt", "lastChecked": "2026-10-15", "source": "community report", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Climb final section to Solaris corner", "textEt": "Liigu viimane lõik Solarise nurgani", "distanceM": 150, "slopePct": 7, "surface": "paving", "lastChecked": "2026-11-10", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "clinic-parnu",
+      "destinationId": "dest-clinic",
+      "name": "Pärnu mnt wide pavement",
+      "nameEt": "Pärnu mnt lai kõnnitee",
+      "minutes": 11,
+      "distanceM": 760,
+      "polyline": [[59.4342, 24.7445], [59.4355, 24.7462], [59.4368, 24.7491], [59.4378, 24.7510], [59.4384, 24.7525]],
+      "steps": [
+        { "text": "Follow Pärnu mnt east side pavement", "textEt": "Liigu mööda Pärnu mnt idapoolset kõnniteed", "distanceM": 240, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-11-22", "source": "field survey" },
+        { "text": "Pass Viru square south crossing", "textEt": "Ületa Viru väljaku lõunapoolne ülekäik", "distanceM": 180, "slopePct": 4, "surface": "paving", "lastChecked": "2026-11-20", "source": "field survey" },
+        { "text": "Cross Narva mnt west signal", "textEt": "Ületa Narva mnt läänepoolne fooriga ülekäik", "distanceM": 120, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-10-25", "source": "community report", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Continue level path to Kesklinn Clinic door", "textEt": "Liigu mööda tasast teed Kesklinna tervisekeskuse ukseni", "distanceM": 220, "slopePct": 2, "surface": "paving", "lastChecked": "2026-11-22", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "clinic-viru",
+      "destinationId": "dest-clinic",
+      "name": "Viru street edge",
+      "nameEt": "Viru tänava äär",
+      "minutes": 10,
+      "distanceM": 690,
+      "polyline": [[59.4342, 24.7445], [59.4360, 24.7458], [59.4372, 24.7484], [59.4381, 24.7505], [59.4384, 24.7525]],
+      "steps": [
+        { "text": "Head north past Jaani church", "textEt": "Liigu põhja poole Jaani kirikust mööda", "distanceM": 190, "slopePct": 4, "surface": "paving", "lastChecked": "2026-11-15", "source": "field survey" },
+        { "text": "Cross Viru Gate outer cobblestone strip", "textEt": "Ületa Viru värava välimine munakivilõik", "distanceM": 160, "slopePct": 6, "surface": "cobblestones", "barrier": { "label": "Cobbled plaza transition", "labelEt": "Munakivist platsi üleminek", "surface": "cobblestones", "maxSlopeOk": 8 }, "lastChecked": "2026-11-19", "source": "community report" },
+        { "text": "Cross Mere pst corner", "textEt": "Ületa Mere pst nurk", "distanceM": 140, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-10-20", "source": "field survey", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Approach Narva mnt 7 entrance", "textEt": "Liigu Narva mnt 7 sissepääsu juurde", "distanceM": 200, "slopePct": 4, "surface": "asphalt", "lastChecked": "2026-11-15", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "clinic-oldtown",
+      "destinationId": "dest-clinic",
+      "name": "Old Town shortcut",
+      "nameEt": "Vanalinna otsetee",
+      "minutes": 9,
+      "distanceM": 620,
+      "polyline": [[59.4342, 24.7445], [59.4364, 24.7449], [59.4382, 24.7478], [59.4389, 24.7506], [59.4384, 24.7525]],
+      "steps": [
+        { "text": "Enter Harju street north edge", "textEt": "Liigu Harju tänava põhjaserva", "distanceM": 150, "slopePct": 6, "surface": "cobblestones", "lastChecked": "2026-11-11", "source": "field survey" },
+        { "text": "Follow steep cobbled alley past Aia street", "textEt": "Liigu mööda järsku munakivitänavat Aia tänava suunas", "distanceM": 180, "slopePct": 10, "surface": "cobblestones", "barrier": { "label": "Steep cobbles (10%) and step kerb", "labelEt": "Järsk munakivi (10%) ja astmega äärekivi", "maxSlopeOk": 10, "surface": "cobblestones", "noDroppedKerb": true }, "lastChecked": "2026-11-23", "source": "community report" },
+        { "text": "Cross Inseneri street unmarked crossing", "textEt": "Ületa Inseneri tänava märgistamata ülekäik", "distanceM": 120, "slopePct": 5, "surface": "asphalt", "lastChecked": "2026-10-12", "source": "community report", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Continue to Narva mnt clinic courtyard", "textEt": "Liigu Narva mnt kliiniku sisehoovini", "distanceM": 170, "slopePct": 4, "surface": "asphalt", "lastChecked": "2026-11-11", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "tram-main",
+      "destinationId": "dest-tram",
+      "name": "Pärnu mnt level route",
+      "nameEt": "Pärnu mnt tasane tee",
+      "minutes": 10,
+      "distanceM": 680,
+      "polyline": [[59.4342, 24.7445], [59.4350, 24.7468], [59.4361, 24.7498], [59.4368, 24.7520], [59.4371, 24.7539]],
+      "steps": [
+        { "text": "Follow Vabaduse väljak east walkway", "textEt": "Liigu mööda Vabaduse väljaku idapoolset kõnniteed", "distanceM": 170, "slopePct": 3, "surface": "paving", "lastChecked": "2026-11-21", "source": "field survey" },
+        { "text": "Continue along Pärnu mnt south pavement", "textEt": "Jätka mööda Pärnu mnt lõunapoolset kõnniteed", "distanceM": 230, "slopePct": 4, "surface": "asphalt", "lastChecked": "2026-11-21", "source": "field survey" },
+        { "text": "Cross Viru roundabout west pedestrian crossing", "textEt": "Ületa Viru ringi läänepoolne ülekäik", "distanceM": 110, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-10-28", "source": "community report", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Board ramp to Viru Tram Stop platform", "textEt": "Liigu kaldteed pidi Viru trammipeatuse platvormile", "distanceM": 170, "slopePct": 3, "surface": "paving", "lastChecked": "2026-11-21", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "tram-tammsaare",
+      "destinationId": "dest-tram",
+      "name": "Tammsaare diagonal",
+      "nameEt": "Tammsaare diagonaal",
+      "minutes": 9,
+      "distanceM": 610,
+      "polyline": [[59.4342, 24.7445], [59.4347, 24.7475], [59.4357, 24.7506], [59.4365, 24.7526], [59.4371, 24.7539]],
+      "steps": [
+        { "text": "Head east along Estonia pst north side", "textEt": "Liigu itta mööda Estonia pst põhjakülge", "distanceM": 190, "slopePct": 4, "surface": "asphalt", "lastChecked": "2026-11-17", "source": "field survey" },
+        { "text": "Cross park gravel path with 7% incline", "textEt": "Ületa pargi kruusatee 7% kaldega", "distanceM": 160, "slopePct": 7, "surface": "gravel", "barrier": { "label": "Short 7% compacted gravel incline", "labelEt": "Lühike 7% tihendatud kruusa kalle", "maxSlopeOk": 7 }, "lastChecked": "2026-11-18", "source": "community report" },
+        { "text": "Cross Laikmaa street junction", "textEt": "Ületa Laikmaa tänava ristmik", "distanceM": 110, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-10-22", "source": "field survey", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Follow shelter side to Viru Tram Stop", "textEt": "Liigu ootepaviljoni küljelt Viru trammipeatuseni", "distanceM": 150, "slopePct": 3, "surface": "paving", "lastChecked": "2026-11-17", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "tram-musumagi",
+      "destinationId": "dest-tram",
+      "name": "Musumägi hillside path",
+      "nameEt": "Musumäe nõlvatee",
+      "minutes": 8,
+      "distanceM": 550,
+      "polyline": [[59.4342, 24.7445], [59.4358, 24.7465], [59.4368, 24.7492], [59.4373, 24.7519], [59.4371, 24.7539]],
+      "steps": [
+        { "text": "Climb Valli street side pavement", "textEt": "Tõuse mööda Valli tänava kõnniteed", "distanceM": 150, "slopePct": 8, "surface": "cobblestones", "lastChecked": "2026-11-13", "source": "field survey" },
+        { "text": "Cross Viru street edge without dropped kerb", "textEt": "Ületa Viru tänava serv ilma madaldatud äärekivita", "distanceM": 140, "slopePct": 9, "surface": "cobblestones", "barrier": { "label": "No dropped kerb & 9% cobbled slope", "labelEt": "Madaldatud äärekivi puudub ja 9% munakivikalle", "maxSlopeOk": 9, "surface": "cobblestones", "noDroppedKerb": true }, "lastChecked": "2026-11-22", "source": "community report" },
+        { "text": "Cross tram track median", "textEt": "Ületa trammitee eraldussaar", "distanceM": 110, "slopePct": 4, "surface": "paving", "lastChecked": "2026-10-16", "source": "community report", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Reach Viru Tram Stop west entry", "textEt": "Jõua Viru trammipeatuse läänepoolse sissepääsuni", "distanceM": 150, "slopePct": 3, "surface": "paving", "lastChecked": "2026-11-13", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "library-direct",
+      "destinationId": "dest-library",
+      "name": "Estonia pst south walk",
+      "nameEt": "Estonia pst lõunakõnnitee",
+      "minutes": 5,
+      "distanceM": 320,
+      "polyline": [[59.4342, 24.7445], [59.4340, 24.7458], [59.4339, 24.7469], [59.4339, 24.7478]],
+      "steps": [
+        { "text": "Leave Vabaduse väljak via south-east ramp", "textEt": "Lahku Vabaduse väljakult kagupoolse kaldtee kaudu", "distanceM": 110, "slopePct": 4, "surface": "paving", "lastChecked": "2026-11-23", "source": "field survey" },
+        { "text": "Cross Pärnu mnt signalised crossing", "textEt": "Ületa Pärnu mnt fooriga ülekäik", "distanceM": 90, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-10-30", "source": "community report", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Continue smooth pavement to Library entrance", "textEt": "Liigu mööda siledat kõnniteed raamatukogu ukseni", "distanceM": 120, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-11-23", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "library-theatre",
+      "destinationId": "dest-library",
+      "name": "Drama Theatre lane",
+      "nameEt": "Draamateatri põiktänav",
+      "minutes": 6,
+      "distanceM": 360,
+      "polyline": [[59.4342, 24.7445], [59.4348, 24.7457], [59.4346, 24.7473], [59.4339, 24.7478]],
+      "steps": [
+        { "text": "Pass Jaani church south pavement", "textEt": "Liigu Jaani kiriku lõunapoolsest kõnniteest mööda", "distanceM": 120, "slopePct": 4, "surface": "paving", "lastChecked": "2026-11-16", "source": "field survey" },
+        { "text": "Cross Georg Otsa cobblestone apron", "textEt": "Ületa Georg Otsa munakivist katteala", "distanceM": 110, "slopePct": 6, "surface": "cobblestones", "barrier": { "label": "Cobblestone apron (30 m)", "labelEt": "Munakivilõik (30 m)", "surface": "cobblestones", "maxSlopeOk": 8 }, "lastChecked": "2026-11-19", "source": "community report" },
+        { "text": "Cross Estonia pst mid-block crossing", "textEt": "Ületa Estonia pst keskmine ülekäik", "distanceM": 60, "slopePct": 3, "surface": "asphalt", "lastChecked": "2026-10-18", "source": "field survey", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Reach Estonia pst 8 main door", "textEt": "Jõua Estonia pst 8 peasissepääsuni", "distanceM": 70, "slopePct": 2, "surface": "paving", "lastChecked": "2026-11-16", "source": "field survey" }
+      ]
+    },
+    {
+      "id": "library-tatari",
+      "destinationId": "dest-library",
+      "name": "Tatari corner path",
+      "nameEt": "Tatari nurga tee",
+      "minutes": 5,
+      "distanceM": 300,
+      "polyline": [[59.4342, 24.7445], [59.4333, 24.7455], [59.4333, 24.7472], [59.4339, 24.7478]],
+      "steps": [
+        { "text": "Head south-east along Roosikrantsi pavement", "textEt": "Liigu kagu suunas mööda Roosikrantsi kõnniteed", "distanceM": 90, "slopePct": 5, "surface": "asphalt", "lastChecked": "2026-11-14", "source": "field survey" },
+        { "text": "Cross Tatari street without dropped kerb", "textEt": "Ületa Tatari tänav ilma madaldatud äärekivita", "distanceM": 100, "slopePct": 9, "surface": "cobblestones", "barrier": { "label": "Missing dropped kerb & 9% slope", "labelEt": "Madaldatud äärekivi puudub ja 9% kalle", "maxSlopeOk": 9, "surface": "cobblestones", "noDroppedKerb": true }, "lastChecked": "2026-11-22", "source": "community report" },
+        { "text": "Cross Sakala side crossing", "textEt": "Ületa Sakala kõrvalülekäik", "distanceM": 60, "slopePct": 4, "surface": "asphalt", "lastChecked": "2026-10-14", "source": "community report", "unknown": true, "unknownText": "Unknown: crossing condition not verified", "unknownTextEt": "Teadmata: ülekäigu seisukord pole kontrollitud" },
+        { "text": "Turn north to Tallinn Central Library", "textEt": "Pööra põhja Tallinna Keskraamatukogu ette", "distanceM": 50, "slopePct": 3, "surface": "paving", "lastChecked": "2026-11-14", "source": "field survey" }
+      ]
+    }
+  ],
+  "alerts": [
+    { "id": "alert-shop-1", "routeId": "shop-boulevard", "text": "Packed snow reported along Estonia pst curb cuts after morning plough.", "textEt": "Estonia pst äärekivide juures on pärast hommikust lumekoristust kinnisõidetud lumi.", "validUntil": "2026-12-18" },
+    { "id": "alert-shop-1-exp", "routeId": "shop-boulevard", "text": "Temporary scaffolding narrowed Teatri väljak crossing.", "textEt": "Ajutised tellingud kitsendasid Teatri väljaku ülekäiku.", "validUntil": "2026-11-05" },
+    { "id": "alert-shop-2", "routeId": "shop-park", "text": "Icy patches reported on Tammsaare Park shaded walkways.", "textEt": "Tammsaare pargi varjulistel teedel on teatatud libedatest kohtadest.", "validUntil": "2026-12-18" },
+    { "id": "alert-shop-2-exp", "routeId": "shop-park", "text": "Wet leaves covering drainage grates along Georg Otsa street.", "textEt": "Märjad lehed katsid äravoolureste Georg Otsa tänaval.", "validUntil": "2026-11-04" },
+    { "id": "alert-shop-3", "routeId": "shop-side-street", "text": "Snow ridge narrows Sakala street pavement to ~85 cm.", "textEt": "Lumevall kitsendab Sakala tänava kõnnitee u 85 cm laiuseks.", "validUntil": "2026-12-18" },
+    { "id": "alert-shop-3-exp", "routeId": "shop-side-street", "text": "Utility van parked near Kentmanni ramp.", "textEt": "Teenindussõiduk parkis Kentmanni kaldtee juures.", "validUntil": "2026-11-02" },
+    { "id": "alert-clinic-1", "routeId": "clinic-parnu", "text": "Slush accumulation near Viru square tactile paving after snowfall.", "textEt": "Lörtsi kogunemine Viru väljaku taktiilsete plaatide juures.", "validUntil": "2026-12-18" },
+    { "id": "alert-clinic-1-exp", "routeId": "clinic-parnu", "text": "Signal maintenance at Pärnu mnt crossing.", "textEt": "Fooride hooldustööd Pärnu mnt ülekäigul.", "validUntil": "2026-11-06" },
+    { "id": "alert-clinic-2", "routeId": "clinic-viru", "text": "Frozen slush between Viru Gate cobblestones.", "textEt": "Külmunud lörts Viru värava munakivide vahel.", "validUntil": "2026-12-18" },
+    { "id": "alert-clinic-2-exp", "routeId": "clinic-viru", "text": "Temporary market stalls narrowed Viru edge.", "textEt": "Ajutised müügiletid kitsendasid Viru tänava äärt.", "validUntil": "2026-11-03" },
+    { "id": "alert-clinic-3", "routeId": "clinic-oldtown", "text": "Black ice reported on shaded Old Town cobble slope.", "textEt": "Varjulisel vanalinna munakivikaldel on teatatud mustast jääst.", "validUntil": "2026-12-18" },
+    { "id": "alert-clinic-3-exp", "routeId": "clinic-oldtown", "text": "Delivery gate blocked Aia lane entrance.", "textEt": "Kaubaveo värav tõkestas Aia põiktänava sissepääsu.", "validUntil": "2026-11-01" },
+    { "id": "alert-tram-1", "routeId": "tram-main", "text": "Gritted ice along Viru tram platform ramp.", "textEt": "Viru trammipeatuse kaldteel on liivatatud jää.", "validUntil": "2026-12-18" },
+    { "id": "alert-tram-1-exp", "routeId": "tram-main", "text": "Tram stop shelter glass replacement works.", "textEt": "Trammipeatuse ootepaviljoni klaasi vahetustööd.", "validUntil": "2026-11-07" },
+    { "id": "alert-tram-2", "routeId": "tram-tammsaare", "text": "Uneven frozen ruts on Tammsaare gravel section.", "textEt": "Tammsaare kruusalõigul on külmunud ebatasased jäljed.", "validUntil": "2026-12-18" },
+    { "id": "alert-tram-2-exp", "routeId": "tram-tammsaare", "text": "Temporary fencing around park tree work.", "textEt": "Ajutine piirdeaed pargi puuhoolduse ümber.", "validUntil": "2026-11-04" },
+    { "id": "alert-tram-3", "routeId": "tram-musumagi", "text": "Snow pile blocks east side of Valli street incline.", "textEt": "Lumehunnik tõkestab Valli tänava tõusu idakülje.", "validUntil": "2026-12-18" },
+    { "id": "alert-tram-3-exp", "routeId": "tram-musumagi", "text": "Paving repair patch near Musumägi stairs.", "textEt": "Sillutise parandustööd Musumäe trepi juures.", "validUntil": "2026-11-02" },
+    { "id": "alert-library-1", "routeId": "library-direct", "text": "Winter grit and slush at Vabaduse väljak south ramp.", "textEt": "Talvine puistematerjal ja lörts Vabaduse väljaku lõunakaldteel.", "validUntil": "2026-12-18" },
+    { "id": "alert-library-1-exp", "routeId": "library-direct", "text": "Temporary cones near Estonia pst bus bay.", "textEt": "Ajutised koonused Estonia pst bussitasku juures.", "validUntil": "2026-11-08" },
+    { "id": "alert-library-2", "routeId": "library-theatre", "text": "Slippery frost on Georg Otsa cobbled apron.", "textEt": "Libe härmatis Georg Otsa munakivilõigul.", "validUntil": "2026-12-18" },
+    { "id": "alert-library-2-exp", "routeId": "library-theatre", "text": "Delivery truck unloading outside Drama Theatre.", "textEt": "Kaubaauto laadimine Draamateatri ees.", "validUntil": "2026-11-03" },
+    { "id": "alert-library-3", "routeId": "library-tatari", "text": "Snow berm along Tatari street kerb edge.", "textEt": "Lumevall Tatari tänava äärekivi servas.", "validUntil": "2026-12-18" },
+    { "id": "alert-library-3-exp", "routeId": "library-tatari", "text": "Sidewalk patch closed on Roosikrantsi corner.", "textEt": "Kõnnitee lõik oli suletud Roosikrantsi nurgal.", "validUntil": "2026-11-01" }
+  ]
+}
